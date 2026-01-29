@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="col-span-1 md:col-span-2 lg:col-span-3 space-y-4 sm:space-y-6">
             {/* Experience Section - Expanded */}
-            <AnimatedSection animation="fade-up" id="experience">
+            {/* <AnimatedSection animation="fade-up" id="experience">
               <Card className="bg-zinc-900/70 border-zinc-800 backdrop-blur-sm">
                 <CardContent className="p-4 sm:p-6">
                   <div className="flex items-center mb-4 sm:mb-6">
@@ -65,7 +65,7 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-            </AnimatedSection>
+            </AnimatedSection> */}
 
             {/* Credentials Section */}
             <AnimatedSection animation="fade-up" id="credentials">
