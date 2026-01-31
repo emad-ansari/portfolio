@@ -82,7 +82,7 @@ export function CredentialsSection() {
           </AnimatedSection>
 
           {/* Skills & Expertise */}
-          <AnimatedSection animation="fade-up" delay={300}>
+          {/* <AnimatedSection animation="fade-up" delay={300}>
             <div className="space-y-3">
               <h4 className="text-sm font-medium text-zinc-400 flex items-center border-b border-zinc-800 pb-2">
                 <Award className="w-4 h-4 mr-2 text-cyan-400" />
@@ -94,7 +94,7 @@ export function CredentialsSection() {
                 ))}
               </div>
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
         </div>
       </CardContent>
     </Card>

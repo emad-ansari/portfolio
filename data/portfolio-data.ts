@@ -60,9 +60,9 @@ export const portfolioData = {
 
 	navigation: [
 		{ label: "Home", href: "/" },
-		{ label: "Credentials", href: "#credentials" },
 		{ label: "Skills", href: "#skills" },
 		{ label: "Projects", href: "#projects" },
+		{ label: "Credentials", href: "#credentials" },
 	],
 
 	experience: [
@@ -115,36 +115,24 @@ export const portfolioData = {
 	credentials: {
 		certifications: [
 			{
-				name: "Certified UX Professional",
-				issuer: "Nielsen Norman Group",
-				date: "2022",
-				logo: "/nng-logo.png",
+				name: "Software Engineering",
+				issuer: "NPTEL",
+				date: "2024",
+				logo: "/nptel-logo.jpg",
 			},
 			{
-				name: "Professional Product Designer",
-				issuer: "Interaction Design Foundation",
-				date: "2021",
-				logo: "/generic-military-logo.png",
-			},
-			{
-				name: "Design Leadership Certification",
-				issuer: "IDEO",
-				date: "2020",
-				logo: "/ideo-logo.png",
+				name: "Compiler Design",
+				issuer: "NPTEL",
+				date: "2025",
+				logo: "/nptel-logo.jpg",
 			},
 		],
 		education: [
 			{
-				degree: "Master of Fine Arts in Design",
-				institution: "Rhode Island School of Design",
-				year: "2015-2017",
-				logo: "/generic-art-school-logo.png",
-			},
-			{
-				degree: "Bachelor of Arts in Visual Communication",
-				institution: "California Institute of the Arts",
-				year: "2011-2015",
-				logo: "/calarts-logo.png",
+				degree: "Bachelor of technology",
+				institution: "Galgotias University",
+				year: "2022-2026",
+				logo: "/university.png",
 			},
 		],
 		skills: [
