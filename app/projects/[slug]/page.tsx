@@ -131,12 +131,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                       {project.gallery.map((image, index) => (
                         <AnimatedSection key={index} animation="zoom-in" delay={100 * (index + 1)}>
-                          <div className="relative h-40 sm:h-48 rounded-lg overflow-hidden border border-zinc-800">
+                          <div className="relative h-40 sm:h-48  overflow-hidden border border-zinc-800 rounded-lg">
                             <Image
                               src={image.url || "/placeholder.svg"}
                               alt={image.caption || `Gallery image ${index + 1}`}
                               fill
-                              className="object-cover"
+                              className="object-cover rounded-lg"
                             />
                           </div>
                         </AnimatedSection>

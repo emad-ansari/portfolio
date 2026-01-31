@@ -1,209 +1,333 @@
 export interface ProjectGalleryImage {
-  url: string
-  caption?: string
+	url: string;
+	caption?: string;
 }
 
 export interface RelatedProject {
-  slug: string
-  title: string
-  category: string
-  image: string
+	slug: string;
+	title: string;
+	category: string;
+	image: string;
 }
 
 export interface Project {
-  id: number
-  slug: string
-  title: string
-  category: string
-  shortDescription: string
-  description: string[]
-  features: string[]
-  technologies: string[]
-  coverImage: string
-  thumbnailImage: string
-  gallery?: ProjectGalleryImage[]
-  client?: string
-  timeline: string
-  role: string
-  liveUrl?: string
-  githubUrl?: string
-  relatedProjects?: RelatedProject[]
+	id: number;
+	slug: string;
+	title: string;
+	category: string;
+	shortDescription: string;
+	description: string[];
+	features: string[];
+	technologies: string[];
+	coverImage: string;
+	thumbnailImage: string;
+	gallery?: ProjectGalleryImage[];
+	client?: string;
+	timeline?: string;
+	role?: string;
+	liveUrl?: string;
+	githubUrl?: string;
+	relatedProjects?: RelatedProject[];
 }
 
 const projects: Project[] = [
-  {
-    id: 1,
-    slug: "job-finder-app",
-    title: "Job Finder App",
-    category: "Mobile App",
-    shortDescription: "A modern job search application designed to connect job seekers with employers efficiently.",
-    description: [
-      "The Job Finder App is a comprehensive mobile application designed to streamline the job search process. It provides an intuitive interface for job seekers to discover opportunities that match their skills and preferences.",
-      "The app features a smart matching algorithm that analyzes user profiles and job requirements to suggest the most relevant positions. Users can easily filter jobs by location, industry, experience level, and salary range.",
-      "For employers, the platform offers tools to post job listings, review applications, and communicate with potential candidates directly through the app.",
-    ],
-    features: [
-      "Personalized job recommendations based on user skills and preferences",
-      "Real-time notifications for new job postings and application updates",
-      "In-app messaging system for direct communication between employers and candidates",
-      "Resume builder with templates and formatting tools",
-      "Interview scheduling and calendar integration",
-      "Detailed analytics for job seekers to track their application progress",
-    ],
-    technologies: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB", "AWS", "Firebase"],
-    coverImage: "/job-finder-cover.png",
-    thumbnailImage: "/modern-finance-app.png",
-    gallery: [
-      { url: "/job-finder-screen1.png", caption: "Home Screen with Job Recommendations" },
-      { url: "/job-finder-screen2.png", caption: "Job Detail View" },
-      { url: "/job-finder-screen3.png", caption: "User Profile and Skills" },
-      { url: "/job-finder-screen4.png", caption: "Application Tracking Dashboard" },
-    ],
-    timeline: "3 months (Q2 2023)",
-    role: "Lead Product Designer",
-    liveUrl: "https://example.com/job-finder",
-    githubUrl: "https://github.com/example/job-finder",
-    relatedProjects: [
-      {
-        slug: "finance-dashboard",
-        title: "Finance Dashboard",
-        category: "Web Application",
-        image: "/modern-finance-overview.png",
-      },
-      {
-        slug: "ecommerce-redesign",
-        title: "E-Commerce Redesign",
-        category: "UX Case Study",
-        image: "/modern-apparel-storefront.png",
-      },
-    ],
-  },
-  {
-    id: 2,
-    slug: "finance-dashboard",
-    title: "Finance Dashboard",
-    category: "Web Application",
-    shortDescription:
-      "A comprehensive financial management dashboard for tracking investments, expenses, and financial goals.",
-    description: [
-      "The Finance Dashboard is a powerful web application designed to help users manage their personal finances in one centralized location. It provides real-time insights into spending patterns, investment performance, and progress toward financial goals.",
-      "The dashboard features interactive charts and visualizations that make complex financial data easy to understand at a glance. Users can connect multiple accounts, categorize transactions automatically, and receive personalized recommendations to improve their financial health.",
-      "The application was designed with a focus on security, using bank-level encryption and authentication protocols to protect sensitive financial information.",
-    ],
-    features: [
-      "Account aggregation from multiple financial institutions",
-      "Automated transaction categorization and tagging",
-      "Budget creation and expense tracking",
-      "Investment portfolio analysis and performance metrics",
-      "Goal setting with progress tracking",
-      "Customizable reports and data exports",
-      "Financial insights and recommendations",
-    ],
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Chart.js", "Plaid API", "PostgreSQL", "Vercel"],
-    coverImage: "/finance-dashboard-cover.png",
-    thumbnailImage: "/modern-finance-overview.png",
-    gallery: [
-      { url: "/finance-dashboard-screen1.png", caption: "Main Dashboard Overview" },
-      { url: "/finance-dashboard-screen2.png", caption: "Expense Analysis" },
-      { url: "/finance-dashboard-screen3.png", caption: "Investment Portfolio" },
-      { url: "/finance-dashboard-screen4.png", caption: "Financial Goals Tracker" },
-    ],
-    timeline: "4 months (Q3-Q4 2022)",
-    role: "UX/UI Designer & Frontend Developer",
-    liveUrl: "https://example.com/finance-dashboard",
-    githubUrl: "https://github.com/example/finance-dashboard",
-    relatedProjects: [
-      {
-        slug: "job-finder-app",
-        title: "Job Finder App",
-        category: "Mobile App",
-        image: "/modern-finance-app.png",
-      },
-      {
-        slug: "ecommerce-redesign",
-        title: "E-Commerce Redesign",
-        category: "UX Case Study",
-        image: "/modern-apparel-storefront.png",
-      },
-    ],
-  },
-  {
-    id: 3,
-    slug: "ecommerce-redesign",
-    title: "E-Commerce Redesign",
-    category: "UX Case Study",
-    shortDescription:
-      "A complete redesign of an e-commerce platform focused on improving user experience and conversion rates.",
-    description: [
-      "This project involved a comprehensive redesign of an established e-commerce platform that was struggling with user engagement and conversion rates. The goal was to create a more intuitive, visually appealing shopping experience that would drive sales and customer satisfaction.",
-      "The redesign process began with extensive user research, including interviews, surveys, and usability testing of the existing platform. This research revealed key pain points in the customer journey, such as a complicated checkout process and difficulty finding products.",
-      "Based on these insights, I developed a new information architecture and user flow that simplified navigation and streamlined the purchase process. The visual design was updated with a clean, modern aesthetic that highlighted product imagery and created a consistent brand experience across all touchpoints.",
-    ],
-    features: [
-      "Simplified product navigation and filtering system",
-      "Redesigned product detail pages with enhanced imagery and information",
-      "Streamlined checkout process reducing steps by 40%",
-      "Personalized product recommendations based on browsing history",
-      "Mobile-first responsive design",
-      "Improved search functionality with predictive suggestions",
-      "Enhanced wishlist and saved items functionality",
-    ],
-    technologies: ["Figma", "Adobe XD", "HTML/CSS", "JavaScript", "Shopify", "Hotjar", "Google Analytics"],
-    coverImage: "/ecommerce-redesign-cover.png",
-    thumbnailImage: "/modern-apparel-storefront.png",
-    gallery: [
-      { url: "/ecommerce-redesign-screen1.png", caption: "Homepage Design" },
-      { url: "/ecommerce-redesign-screen2.png", caption: "Product Category Page" },
-      { url: "/ecommerce-redesign-screen3.png", caption: "Product Detail Page" },
-      { url: "/ecommerce-redesign-screen4.png", caption: "Checkout Process" },
-    ],
-    client: "Fashion Retailer Inc.",
-    timeline: "6 months (Q1-Q2 2022)",
-    role: "Lead UX Designer",
-    liveUrl: "https://example.com/fashion-retailer",
-    relatedProjects: [
-      {
-        slug: "job-finder-app",
-        title: "Job Finder App",
-        category: "Mobile App",
-        image: "/modern-finance-app.png",
-      },
-      {
-        slug: "finance-dashboard",
-        title: "Finance Dashboard",
-        category: "Web Application",
-        image: "/modern-finance-overview.png",
-      },
-    ],
-  },
-]
+	{
+		id: 1,
+		slug: "code.io",
+		title: "code.io",
+		category: "Web Application",
+		shortDescription:
+			"A clean and modern online code editor built with React and Monaco, designed for a smooth and responsive coding experience",
+		description: [
+			"Code.io is a clean and modern online code editor built for students and developers who want a smooth, distraction-free coding experience directly in the browser.",
+			"It supports multiple programming languages and provides instant code execution with real-time output.",
+			"The platform focuses on simplicity, performance, and a beautiful user interface to help users learn and practice coding efficiently.",
+		],
 
-export { projects }
+		features: [
+			"Multi-language support for writing and running code in different programming languages",
+			"Clean and distraction-free user interface for focused coding",
+			"Monaco code editor with smart syntax highlighting and editor features",
+			"Instant code execution with real-time output console",
+			"Responsive design that works well on desktop and mobile devices",
+			"Dark mode support for a comfortable coding experience",
+		],
+		technologies: [
+			"React",
+			"TypeScript",
+			"Tailwind CSS",
+			"Shadcn UI",
+			"Monaco Editor",
+			"Node.js",
+			"Express",
+			"PostgreSQL",
+			"Prisma",
+			"Zod",
+		],
+		coverImage: "/projects-gallery/codeio/home.png",
+		thumbnailImage: "/projects-gallery/codeio/thumbnail.jpg",
+		gallery: [
+			{
+				url: "/projects-gallery/codeio/home.png",
+				caption: "Home Screen",
+			},
+			{
+				url: "/projects-gallery/codeio/problem-set.png",
+				caption: "Problem Challenges View",
+			},
+			{
+				url: "/projects-gallery/codeio/problems.png",
+				caption: "Problem List View",
+			},
+			{
+				url: "/projects-gallery/codeio/code-playground.png",
+				caption: "Coding Playground",
+			},
+			{
+				url: "/projects-gallery/codeio/profile.png",
+				caption: "User Profile",
+			},
+		],
+		liveUrl: "http://codeio-tawny.vercel.app/",
+		githubUrl: "https://github.com/emad-ansari/code.io",
+		// timeline: "3 months (Q2 2023)",
+		// role: "Lead Product Designer",
+		// relatedProjects: [
+		// 	{
+		// 		slug: "finance-dashboard",
+		// 		title: "Finance Dashboard",
+		// 		category: "Web Application",
+		// 		image: "/modern-finance-overview.png",
+		// 	},
+		// 	{
+		// 		slug: "ecommerce-redesign",
+		// 		title: "E-Commerce Redesign",
+		// 		category: "UX Case Study",
+		// 		image: "/modern-apparel-storefront.png",
+		// 	},
+		// ],
+	},
+	{
+		id: 2,
+		slug: "blood-bank",
+		title: "Blood Bank Management System",
+		category: "Web Application",
+		shortDescription:
+			"A centralized blood bank management platform that connects donors, hospitals, and blood banks to manage blood inventory, donations, and distribution efficiently.",
+		description: [
+			"The Blood Bank Management System is a centralized web platform designed to streamline blood donation, storage, and distribution processes across hospitals and blood banks.",
+			"The application connects donors, hospitals, blood banks, and administrators, enabling smooth coordination and real-time access to critical blood-related information.",
+			"It focuses on reliability, scalability, and security by using modern technologies like Next.js, TypeScript, Prisma, Clerk, and AWS services.",
+		],
+
+		features: [
+			"Real-time blood inventory tracking with automatic expiry alerts",
+			"Blood component separation and cross-matching verification",
+			"Donor eligibility checks, appointment scheduling, and donation history tracking",
+			"Health screening records and donor reward management",
+			"Emergency and regular blood request handling for hospitals",
+			"Patient blood type matching and blood usage reporting",
+			"Transport coordination for blood delivery",
+			"Detailed reports on collection, distribution, wastage, and participation metrics",
+		],
+
+		technologies: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Prisma",
+			"PostgreSQL",
+			"Clerk",
+		],
+		coverImage: "/projects-gallery/bloodbank/home.png",
+		thumbnailImage: "/projects-gallery/bloodbank/donation-info.png",
+		gallery: [
+			{
+				url: "/projects-gallery/bloodbank/home.png",
+				caption: "Home Page",
+			},
+			{
+				url: "/projects-gallery/bloodbank/stock-availability.png",
+				caption: "Blood Bank Stock Availibility",
+			},
+			{
+				url: "/projects-gallery/bloodbank/donation-info.png",
+				caption: "Donation Info",
+			},
+			{
+				url: "/projects-gallery/bloodbank/blood-bank-register.png",
+				caption: "Register Blood Bank Form",
+			},
+		],
+		liveUrl: "https://blood-bank-orcin.vercel.app/",
+		githubUrl: "https://github.com/emad-ansari/Blood-Bank",
+		// timeline: "4 months (Q3-Q4 2022)",
+		// role: "UX/UI Designer & Frontend Developer",
+		relatedProjects: [
+			{
+				slug: "job-finder-app",
+				title: "Job Finder App",
+				category: "Mobile App",
+				image: "/modern-finance-app.png",
+			},
+			{
+				slug: "ecommerce-redesign",
+				title: "E-Commerce Redesign",
+				category: "UX Case Study",
+				image: "/modern-apparel-storefront.png",
+			},
+		],
+	},
+	{
+		id: 3,
+		slug: "balance-tree-visualizer",
+		title: "Balance Tree Visualizer",
+		category: "Web Application",
+		shortDescription:
+			"An interactive visual tool to learn and explore balanced binary search trees like AVL and Red-Black trees through real-time animations.",
+
+		description: [
+			"The Balanced Tree Visualizer is an interactive web application built to help students and developers understand balanced binary search trees in a visual and intuitive way.",
+			"It allows users to explore how AVL and Red-Black trees work by visually demonstrating insertions, deletions, searches, and balancing operations.",
+			"With smooth animations and traversal visualizations, the tool makes complex tree concepts easier to learn and remember.",
+		],
+
+		features: [
+			"Real-time visualization of balanced binary search trees with smooth animations",
+			"Support for multiple tree types including AVL and Red-Black trees",
+			"Insert, delete, and search operations with instant visual feedback",
+			"Visualization of in-order, pre-order, post-order, and level-order traversals",
+			"Custom animation controls to adjust speed, pause, resume, or reset",
+			"Interactive canvas with pan and zoom support for large trees",
+			"Fully responsive design for desktop and mobile devices",
+			"Dark and light mode toggle for comfortable viewing",
+		],
+
+		technologies: [
+			"React",
+			"TypeScript",
+			"Node.js",
+			"PostgreSQL",
+			"Chart.js",
+			"Framer Motion",
+		],
+		coverImage: "/projects-gallery/balance-tree/cover-image.png",
+		thumbnailImage: "/projects-gallery/balance-tree/home.png",
+		// gallery: [
+		// 	{
+		// 		url: "/ecommerce-redesign-screen1.png",
+		// 		caption: "Homepage Design",
+		// 	},
+		// 	{
+		// 		url: "/ecommerce-redesign-screen2.png",
+		// 		caption: "Product Category Page",
+		// 	},
+		// 	{
+		// 		url: "/ecommerce-redesign-screen3.png",
+		// 		caption: "Product Detail Page",
+		// 	},
+		// 	{
+		// 		url: "/ecommerce-redesign-screen4.png",
+		// 		caption: "Checkout Process",
+		// 	},
+		// ],
+		// client: "Fashion Retailer Inc.",
+		// timeline: "6 months (Q1-Q2 2022)",
+		// role: "Lead UX Designer",
+		liveUrl: "https://balanced-tree-visualizer.vercel.app/",
+		githubUrl: "https://github.com/Ideation-X/balanced-tree-visualizer",
+	},
+	{
+		id: 4,
+		slug: "daily-xp",
+		title: "Daily-xp",
+		category: "Web Application",
+		shortDescription:
+			"A gamified productivity web application that motivates users to build habits, complete tasks, and stay consistent using XP rewards and progress tracking.",
+		description: [
+			"This is a modern web application designed to improve daily productivity by turning routine activities into a fun and engaging experience.",
+			"Users earn experience points (XP) by completing habits, tasks, journaling, and tracking their mood, which helps maintain motivation and consistency.",
+			"The application focuses on simplicity, visual feedback, and progress tracking to encourage long-term personal growth.",
+		],
+
+		features: [
+			"Gamification system with XP rewards and level progression",
+			"Visual XP progress bar and achievement milestones",
+			"Daily habit and task tracking with completion status",
+			"Streak tracking to encourage consistency",
+			"Daily mood logging with mood history and trend visualization",
+			"Simple and fast daily journaling with XP rewards",
+			"Clean and modern UI with responsive design",
+			"Dark mode support for better user experience",
+			"JWT-based authentication and secure user data handling",
+			"Protected API endpoints for application security",
+		],
+
+		technologies: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Shadcn UI",
+			"Node.js",
+			"MongoDB"
+		],
+		coverImage: "/projects-gallery/balance-tree/cover-image.png",
+		thumbnailImage: "/projects-gallery/daily-xp/login.png",
+		// gallery: [
+		// 	{
+		// 		url: "/ecommerce-redesign-screen1.png",
+		// 		caption: "Homepage Design",
+		// 	},
+		// 	{
+		// 		url: "/ecommerce-redesign-screen2.png",
+		// 		caption: "Product Category Page",
+		// 	},
+		// 	{
+		// 		url: "/ecommerce-redesign-screen3.png",
+		// 		caption: "Product Detail Page",
+		// 	},
+		// 	{
+		// 		url: "/ecommerce-redesign-screen4.png",
+		// 		caption: "Checkout Process",
+		// 	},
+		// ],
+		// client: "Fashion Retailer Inc.",
+		// timeline: "6 months (Q1-Q2 2022)",
+		// role: "Lead UX Designer",
+		liveUrl: "https://daily-xp.vercel.app/",
+		githubUrl: "https://github.com/emad-ansari/Gamified-User-Dashboard",
+	},
+];
+
+export { projects };
 
 // Add these functions after the projects array export
 
 export function getAllProjects(): Project[] {
-  return projects
+	return projects;
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find((project) => project.slug === slug)
+	return projects.find((project) => project.slug === slug);
 }
 
-export function getRelatedProjects(currentSlug: string, limit = 2): RelatedProject[] {
-  const currentProject = getProjectBySlug(currentSlug)
-  if (!currentProject || !currentProject.relatedProjects) {
-    // If no related projects defined, return random projects
-    return projects
-      .filter((project) => project.slug !== currentSlug)
-      .slice(0, limit)
-      .map((project) => ({
-        slug: project.slug,
-        title: project.title,
-        category: project.category,
-        image: project.thumbnailImage,
-      }))
-  }
+export function getRelatedProjects(
+	currentSlug: string,
+	limit = 2,
+): RelatedProject[] {
+	const currentProject = getProjectBySlug(currentSlug);
+	if (!currentProject || !currentProject.relatedProjects) {
+		// If no related projects defined, return random projects
+		return projects
+			.filter((project) => project.slug !== currentSlug)
+			.slice(0, limit)
+			.map((project) => ({
+				slug: project.slug,
+				title: project.title,
+				category: project.category,
+				image: project.thumbnailImage,
+			}));
+	}
 
-  return currentProject.relatedProjects.slice(0, limit)
+	return currentProject.relatedProjects.slice(0, limit);
 }
