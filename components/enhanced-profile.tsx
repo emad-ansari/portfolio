@@ -103,12 +103,12 @@ export function EnhancedProfile() {
 						value="about"
 						className="p-4 sm:p-6 space-y-4 sm:space-y-6 focus:outline-none"
 					>
-						<div className="space-y-3">
+						<div className="space-y-3 ">
 							<h3 className="text-sm font-medium text-zinc-400 flex items-center">
 								<User className="w-4 h-4 mr-2 text-cyan-400" />
 								About Me
 							</h3>
-							<p className="text-sm ">{aboutInfo.bio}</p>
+							<p className="text-sm text-justify ">{aboutInfo.bio}</p>
 						</div>
 
 						<div className="space-y-3">

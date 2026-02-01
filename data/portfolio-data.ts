@@ -116,12 +116,14 @@ export const portfolioData = {
 		certifications: [
 			{
 				name: "Software Engineering",
+				link: "https://drive.google.com/file/d/1ULU9n-VxOdZRVgFE-bVXVDrIgEGYx8RO/view",
 				issuer: "NPTEL",
 				date: "2024",
 				logo: "/nptel-logo.jpg",
 			},
 			{
 				name: "Compiler Design",
+				link: "https://drive.google.com/file/d/1muhRqsC5CgM9TNhlgKKxheNGFwYE8jCX/view",
 				issuer: "NPTEL",
 				date: "2025",
 				logo: "/nptel-logo.jpg",

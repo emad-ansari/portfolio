@@ -232,7 +232,7 @@ export default function Home() {
 					className="mt-8 sm:mt-12 py-4 sm:py-6 text-center text-xs sm:text-sm text-zinc-500"
 				>
 					<p>
-						© {new Date().getFullYear()} Jane Doe. All rights
+						© {new Date().getFullYear()} Emad. All rights
 						reserved.
 					</p>
 				</AnimatedSection>
