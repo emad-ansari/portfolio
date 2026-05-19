@@ -65,7 +65,7 @@ const projects: Project[] = [
 			"Zod",
 		],
 		coverImage: "/projects-gallery/codeio/home.png",
-		thumbnailImage: "/projects-gallery/codeio/thumbnail.jpg",
+		thumbnailImage: "/projects-gallery/codeio/thumbnail.png",
 		gallery: [
 			{
 				url: "/projects-gallery/codeio/home.png",
@@ -109,6 +109,82 @@ const projects: Project[] = [
 	},
 	{
 		id: 2,
+		slug: "code.io",
+		title: "code.io",
+		category: "Web Application",
+		shortDescription:
+			"A clean and modern online code editor built with React and Monaco, designed for a smooth and responsive coding experience",
+		description: [
+			"Code.io is a clean and modern online code editor built for students and developers who want a smooth, distraction-free coding experience directly in the browser.",
+			"It supports multiple programming languages and provides instant code execution with real-time output.",
+			"The platform focuses on simplicity, performance, and a beautiful user interface to help users learn and practice coding efficiently.",
+		],
+
+		features: [
+			"Multi-language support for writing and running code in different programming languages",
+			"Clean and distraction-free user interface for focused coding",
+			"Monaco code editor with smart syntax highlighting and editor features",
+			"Instant code execution with real-time output console",
+			"Responsive design that works well on desktop and mobile devices",
+			"Dark mode support for a comfortable coding experience",
+		],
+		technologies: [
+			"React",
+			"TypeScript",
+			"Tailwind CSS",
+			"Shadcn UI",
+			"Monaco Editor",
+			"Node.js",
+			"Express",
+			"PostgreSQL",
+			"Prisma",
+			"Zod",
+		],
+		coverImage: "/projects-gallery/codeio/home.png",
+		thumbnailImage: "/projects-gallery/codeio/thumbnail.png",
+		gallery: [
+			{
+				url: "/projects-gallery/codeio/home.png",
+				caption: "Home Screen",
+			},
+			{
+				url: "/projects-gallery/codeio/problem-set.png",
+				caption: "Problem Challenges View",
+			},
+			{
+				url: "/projects-gallery/codeio/problems.png",
+				caption: "Problem List View",
+			},
+			{
+				url: "/projects-gallery/codeio/code-playground.png",
+				caption: "Coding Playground",
+			},
+			{
+				url: "/projects-gallery/codeio/profile.png",
+				caption: "User Profile",
+			},
+		],
+		liveUrl: "http://codeio-tawny.vercel.app/",
+		githubUrl: "https://github.com/emad-ansari/code.io",
+		// timeline: "3 months (Q2 2023)",
+		// role: "Lead Product Designer",
+		// relatedProjects: [
+		// 	{
+		// 		slug: "finance-dashboard",
+		// 		title: "Finance Dashboard",
+		// 		category: "Web Application",
+		// 		image: "/modern-finance-overview.png",
+		// 	},
+		// 	{
+		// 		slug: "ecommerce-redesign",
+		// 		title: "E-Commerce Redesign",
+		// 		category: "UX Case Study",
+		// 		image: "/modern-apparel-storefront.png",
+		// 	},
+		// ],
+	},
+	{
+		id: 3,
 		slug: "blood-bank",
 		title: "Blood Bank Management System",
 		category: "Web Application",
@@ -179,7 +255,7 @@ const projects: Project[] = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		slug: "balance-tree-visualizer",
 		title: "Balance Tree Visualizer",
 		category: "Web Application",
@@ -238,7 +314,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Ideation-X/balanced-tree-visualizer",
 	},
 	{
-		id: 4,
+		id: 5,
 		slug: "daily-xp",
 		title: "Daily-xp",
 		category: "Web Application",

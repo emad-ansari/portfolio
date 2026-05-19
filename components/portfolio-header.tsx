@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
@@ -58,7 +58,8 @@ export function PortfolioHeader() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo/Name */}
-        <Link href="/" className="flex items-center group">
+        <Link href="/" className="flex items-center group ">
+          {/* <Image src = "/logo.png" alt = "Logo"  className="object-cover" width={30} height = {30} /> */}
           <div className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-bold text-xl relative overflow-hidden transition-transform duration-300 group-hover:scale-105">
             {personalInfo.name}
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
