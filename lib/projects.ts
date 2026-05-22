@@ -33,79 +33,71 @@ export interface Project {
 const projects: Project[] = [
 	{
 		id: 1,
-		slug: "code.io",
-		title: "code.io",
-		category: "Web Application",
+		slug: "teamforge",
+		title: "TeamForge",
+		category: "Project Management Platform",
+
 		shortDescription:
-			"A clean and modern online code editor built with React and Monaco, designed for a smooth and responsive coding experience",
+			"A modern collaborative project management platform that helps teams manage projects, tasks, members, and workflow in one place.",
+
 		description: [
-			"Code.io is a clean and modern online code editor built for students and developers who want a smooth, distraction-free coding experience directly in the browser.",
-			"It supports multiple programming languages and provides instant code execution with real-time output.",
-			"The platform focuses on simplicity, performance, and a beautiful user interface to help users learn and practice coding efficiently.",
+			"TeamForge is a full-stack collaborative project management platform built for teams to efficiently manage projects, tasks, invitations, and team workflows.",
+			"It provides secure authentication, project collaboration, task assignment, dashboard analytics, and email-based invitation flow for seamless teamwork.",
+			"The platform focuses on scalability, clean architecture, and a smooth user experience while maintaining a modern and responsive interface.",
 		],
 
 		features: [
-			"Multi-language support for writing and running code in different programming languages",
-			"Clean and distraction-free user interface for focused coding",
-			"Monaco code editor with smart syntax highlighting and editor features",
-			"Instant code execution with real-time output console",
-			"Responsive design that works well on desktop and mobile devices",
-			"Dark mode support for a comfortable coding experience",
+			"JWT-based authentication and protected routes for secure access",
+			"Create, update, and manage projects with team collaboration support",
+			"Invite team members via email with secure token-based invitation flow",
+			"Task management system with assignment, status tracking, labels, and due dates",
+			"Personalized 'My Tasks' dashboard for assigned tasks overview",
+			"Dashboard analytics with task statistics, recent activities, and active projects",
+			"Activity logs to track important project and task actions",
+			"Role-based access control with Admin and Member permissions",
+			"Responsive and clean user interface optimized for smooth workflow management",
 		],
+
 		technologies: [
 			"React",
 			"TypeScript",
-			"Tailwind CSS",
-			"Shadcn UI",
-			"Monaco Editor",
 			"Node.js",
-			"Express",
+			"Express.js",
 			"PostgreSQL",
-			"Prisma",
-			"Zod",
+			"Drizzle ORM",
+			"JWT Authentication",
+			"Zustand",
+			"Tailwind CSS",
+			"Nodemailer",
+			"NeonDB",
 		],
-		coverImage: "/projects-gallery/codeio/home.png",
-		thumbnailImage: "/projects-gallery/codeio/thumbnail.png",
+
+		coverImage: "/projects-gallery/teamforge/home.png",
+
+		thumbnailImage: "/projects-gallery/teamforge/thumbnail.png",
+
 		gallery: [
 			{
-				url: "/projects-gallery/codeio/home.png",
-				caption: "Home Screen",
+				url: "/projects-gallery/teamforge/home.png",
+				caption: "Dashboard Overview",
 			},
 			{
-				url: "/projects-gallery/codeio/problem-set.png",
-				caption: "Problem Challenges View",
+				url: "/projects-gallery/teamforge/projects.png",
+				caption: "Projects Management",
 			},
 			{
-				url: "/projects-gallery/codeio/problems.png",
-				caption: "Problem List View",
+				url: "/projects-gallery/teamforge/tasks.png",
+				caption: "Task Management",
 			},
 			{
-				url: "/projects-gallery/codeio/code-playground.png",
-				caption: "Coding Playground",
-			},
-			{
-				url: "/projects-gallery/codeio/profile.png",
-				caption: "User Profile",
+				url: "/projects-gallery/teamforge/my-tasks.png",
+				caption: "My Tasks Screen",
 			},
 		],
-		liveUrl: "http://codeio-tawny.vercel.app/",
-		githubUrl: "https://github.com/emad-ansari/code.io",
-		// timeline: "3 months (Q2 2023)",
-		// role: "Lead Product Designer",
-		// relatedProjects: [
-		// 	{
-		// 		slug: "finance-dashboard",
-		// 		title: "Finance Dashboard",
-		// 		category: "Web Application",
-		// 		image: "/modern-finance-overview.png",
-		// 	},
-		// 	{
-		// 		slug: "ecommerce-redesign",
-		// 		title: "E-Commerce Redesign",
-		// 		category: "UX Case Study",
-		// 		image: "/modern-apparel-storefront.png",
-		// 	},
-		// ],
+
+		liveUrl: "https://team-forge-snowy.vercel.app/",
+
+		githubUrl: "https://github.com/emad-ansari/TeamForge",
 	},
 	{
 		id: 2,
@@ -345,7 +337,7 @@ const projects: Project[] = [
 			"Tailwind CSS",
 			"Shadcn UI",
 			"Node.js",
-			"MongoDB"
+			"MongoDB",
 		],
 		coverImage: "/projects-gallery/balance-tree/cover-image.png",
 		thumbnailImage: "/projects-gallery/daily-xp/login.png",
